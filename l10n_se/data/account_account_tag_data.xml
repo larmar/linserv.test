@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+      <!-- Profit and loss tags -->
+
+        <record id="tag_se_vat_05" model="account.account.tag">
+            <field name="name">Moms 05</field>
+            <field name="applicability">accounts</field>
+        </record>
+
+        <record id="tag_se_vat_06" model="account.account.tag">
+            <field name="name">Moms 06</field>
+            <field name="applicability">accounts</field>
+        </record>
+
+        <record id="tag_se_vat_07" model="account.account.tag">
+            <field name="name">Moms 07</field>
+            <field name="applicability">accounts</field>
+        </record>
+
+        <record id="tag_se_vat_08" model="account.account.tag">
+            <field name="name">Moms 08</field>
+            <field name="applicability">accounts</field>
+        </record>
+
+        <record id="tag_se_vat_10" model="account.account.tag">
+            <field name="name">Moms 10</field>
+            <field name="applicability">accounts</field>
+        </record>
+
+        <record id="tag_se_vat_11" model="account.account.tag">
+            <field name="name">Moms 11</field>
+            <field name="applicability">accounts</field>
+        </record>
+
+        <record id="tag_se_vat_12" model="account.account.tag">
+            <field name="name">Moms 12</field>
+            <field name="applicability">accounts</field>
+        </record>
+
+        <record id="tag_se_vat_20" model="account.account.tag">
+            <field name="name">Moms 20</field>
+            <field name="applicability">accounts</field>
+        </record>
+
+        <record id="tag_se_vat_21" model="account.account.tag">
+            <field name="name">Moms 21</field>
+            <field name="applicability">accounts</field>
+        </record>
+
+        <record id="tag_se_vat_22" model="account.account.tag">
+            <field name="name">Moms 22</field>
+            <field name="applicability">accounts</field>
+        </record>
+
+        <record id="tag_se_vat_23" model="account.account.tag">
+            <field name="name">Moms 23</field>
+            <field name="applicability">accounts</field>
+        </record>
+
+        <record id="tag_se_vat_24" model="account.account.tag">
+            <field name="name">Moms 24</field>
+            <field name="applicability">accounts</field>
+        </record>
+
+        <record id="tag_se_vat_30" model="account.account.tag">
+            <field name="name">Moms 30</field>
+            <field name="applicability">accounts</field>
+        </record>
+
+        <record id="tag_se_vat_31" model="account.account.tag">
+            <field name="name">Moms 31</field>
+            <field name="applicability">accounts</field>
+        </record>
+
+        <record id="tag_se_vat_32" model="account.account.tag">
+            <field name="name">Moms 32</field>
+            <field name="applicability">accounts</field>
+        </record>
+
+        <record id="tag_se_vat_35" model="account.account.tag">
+            <field name="name">Moms 35</field>
+            <field name="applicability">accounts</field>
+        </record>
+
+        <record id="tag_se_vat_36" model="account.account.tag">
+            <field name="name">Moms 36</field>
+            <field name="applicability">accounts</field>
+        </record>
+
+        <record id="tag_se_vat_37" model="account.account.tag">
+            <field name="name">Moms 37</field>
+            <field name="applicability">accounts</field>
+        </record>
+
+        <record id="tag_se_vat_38" model="account.account.tag">
+            <field name="name">Moms 38</field>
+            <field name="applicability">accounts</field>
+        </record>
+
+        <record id="tag_se_vat_39" model="account.account.tag">
+            <field name="name">Moms 39</field>
+            <field name="applicability">accounts</field>
+        </record>
+
+        <record id="tag_se_vat_40" model="account.account.tag">
+            <field name="name">Moms 40</field>
+            <field name="applicability">accounts</field>
+        </record>
+
+        <record id="tag_se_vat_41" model="account.account.tag">
+            <field name="name">Moms 41</field>
+            <field name="applicability">accounts</field>
+        </record>
+
+        <record id="tag_se_vat_42" model="account.account.tag">
+            <field name="name">Moms 42</field>
+            <field name="applicability">accounts</field>
+        </record>
+
+        <record id="tag_se_vat_48" model="account.account.tag">
+            <field name="name">Moms 48</field>
+            <field name="applicability">accounts</field>
+        </record>
+
+        <record id="tag_se_vat_49" model="account.account.tag">
+            <field name="name">Moms 49</field>
+            <field name="applicability">accounts</field>
+        </record>
+
+        <record id="tag_se_vat_50" model="account.account.tag">
+            <field name="name">Moms 50</field>
+            <field name="applicability">accounts</field>
+        </record>
+
+        <record id="tag_se_vat_60" model="account.account.tag">
+            <field name="name">Moms 60</field>
+            <field name="applicability">accounts</field>
+        </record>
+
+        <record id="tag_se_vat_61" model="account.account.tag">
+            <field name="name">Moms 61</field>
+            <field name="applicability">accounts</field>
+        </record>
+
+        <record id="tag_se_vat_62" model="account.account.tag">
+            <field name="name">Moms 62</field>
+            <field name="applicability">accounts</field>
+        </record>
+
+</odoo>

@@ -1,0 +1,1562 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+        <!-- Tax Grouops -->
+        <record id="tax_group_ST25" model="account.tax.group">
+            <field name="name">ST25</field>
+            <field name="sequence">11</field>
+        </record>
+
+        <record id="tax_group_STS25" model="account.tax.group">
+            <field name="name">STS25</field>
+            <field name="sequence">12</field>
+        </record>
+
+        <record id="tax_group_ST12" model="account.tax.group">
+            <field name="name">ST12</field>
+            <field name="sequence">13</field>
+        </record>
+
+        <record id="tax_group_STS12" model="account.tax.group">
+            <field name="name">STS25</field>
+            <field name="sequence">14</field>
+        </record>
+
+        <record id="tax_group_ST6" model="account.tax.group">
+            <field name="name">ST6</field>
+            <field name="sequence">15</field>
+        </record>
+
+        <record id="tax_group_STS6" model="account.tax.group">
+            <field name="name">STS6</field>
+            <field name="sequence">16</field>
+        </record>
+
+        <record id="tax_group_ST0" model="account.tax.group">
+            <field name="name">ST0</field>
+            <field name="sequence">17</field>
+        </record>
+
+        <record id="tax_group_STS0" model="account.tax.group">
+            <field name="name">STS0</field>
+            <field name="sequence">18</field>
+        </record>
+
+        <record id="tax_group_ST0_EU" model="account.tax.group">
+            <field name="name">ST0_EU</field>
+            <field name="sequence">19</field>
+        </record>
+
+        <record id="tax_group_STS0_EU" model="account.tax.group">
+            <field name="name">STS0_EU</field>
+            <field name="sequence">20</field>
+        </record>
+
+        <record id="tax_group_ST0_NEU" model="account.tax.group">
+            <field name="name">ST0_NEU</field>
+            <field name="sequence">21</field>
+        </record>
+
+        <record id="tax_group_STS0_NEU" model="account.tax.group">
+            <field name="name">STS0_NEU</field>
+            <field name="sequence">22</field>
+        </record>
+
+        <record id="tax_group_PT25" model="account.tax.group">
+            <field name="name">PT25</field>
+            <field name="sequence">23</field>
+        </record>
+
+        <record id="tax_group_PTS25" model="account.tax.group">
+            <field name="name">PTS25</field>
+            <field name="sequence">24</field>
+        </record>
+
+        <record id="tax_group_PT12" model="account.tax.group">
+            <field name="name">PT12</field>
+            <field name="sequence">25</field>
+        </record>
+
+        <record id="tax_group_PTS12" model="account.tax.group">
+            <field name="name">PTS12</field>
+            <field name="sequence">26</field>
+        </record>
+
+        <record id="tax_group_PT6" model="account.tax.group">
+            <field name="name">PT6</field>
+            <field name="sequence">27</field>
+        </record>
+
+        <record id="tax_group_PTS6" model="account.tax.group">
+            <field name="name">PTS6</field>
+            <field name="sequence">28</field>
+        </record>
+
+        <record id="tax_group_PTL" model="account.tax.group">
+            <field name="name">PTL</field>
+            <field name="sequence">29</field>
+        </record>
+
+        <record id="tax_group_PT25_EU" model="account.tax.group">
+            <field name="name">PT25_EU</field>
+            <field name="sequence">30</field>
+        </record>
+
+        <record id="tax_group_PTS25_EU" model="account.tax.group">
+            <field name="name">PTS25_EU</field>
+            <field name="sequence">31</field>
+        </record>
+
+        <record id="tax_group_PT12_EU" model="account.tax.group">
+            <field name="name">PT12_EU</field>
+            <field name="sequence">32</field>
+        </record>
+
+        <record id="tax_group_PTS12_EU" model="account.tax.group">
+            <field name="name">PTS12_EU</field>
+            <field name="sequence">33</field>
+        </record>
+
+        <record id="tax_group_PT6_EU" model="account.tax.group">
+            <field name="name">PT6_EU</field>
+            <field name="sequence">34</field>
+        </record>
+
+        <record id="tax_group_PTS6_EU" model="account.tax.group">
+            <field name="name">PTS6_EU</field>
+            <field name="sequence">35</field>
+        </record>
+
+        <record id="tax_group_PT25_NEU" model="account.tax.group">
+            <field name="name">PT25_NEU</field>
+            <field name="sequence">36</field>
+        </record>
+
+        <record id="tax_group_PTS25_NEU" model="account.tax.group">
+            <field name="name">PTS25_NEU</field>
+            <field name="sequence">37</field>
+        </record>
+
+        <record id="tax_group_PT12_NEU" model="account.tax.group">
+            <field name="name">PT12_NEU</field>
+            <field name="sequence">38</field>
+        </record>
+
+        <record id="tax_group_PTS12_NEU" model="account.tax.group">
+            <field name="name">PTS12_NEU</field>
+            <field name="sequence">39</field>
+        </record>
+
+        <record id="tax_group_PT6_NEU" model="account.tax.group">
+            <field name="name">PT6_NEU</field>
+            <field name="sequence">40</field>
+        </record>
+
+        <record id="tax_group_PTS6_NEU" model="account.tax.group">
+            <field name="name">PTS6_NEU</field>
+            <field name="sequence">41</field>
+        </record>
+
+        <!-- Tax Templates -->
+        <record id="sale_tax_25_goods" model="account.tax.template">
+            <field name="sequence">10</field>
+            <field name="description">25%</field>
+            <field name="name">Utgående moms 25%</field>
+            <field name="price_include" eval="0"/>
+            <field name="amount">25</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">sale</field>
+            <field name="chart_template_id" ref="l10nse_chart_template"/>
+            <field name="tax_group_id" ref="tax_group_ST25"/>
+            <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'plus_report_line_ids': [ref('tax_report_line_A05')],
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('l10n_se.1_coa_2611'),
+                    'plus_report_line_ids': [ref('tax_report_line_B10')],
+                }),
+            ]"/>
+            <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'plus_report_line_ids': [ref('tax_report_line_A05')],
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('l10n_se.1_coa_2611'),
+                    'plus_report_line_ids': [ref('tax_report_line_B10')],
+                }),
+            ]"/>
+        </record>
+
+        <record id="sale_tax_25_services" model="account.tax.template">
+            <field name="sequence">11</field>
+            <field name="description">25%</field>
+            <field name="name">Utgående moms Tjänst 25%</field>
+            <field name="price_include" eval="0"/>
+            <field name="amount">25</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">sale</field>
+            <field name="active" eval="False"/>
+            <field name="chart_template_id" ref="l10nse_chart_template"/>
+            <field name="tax_group_id" ref="tax_group_STS25"/>
+            <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'plus_report_line_ids': [ref('tax_report_line_A05')],
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('l10n_se.1_coa_2611'),
+                    'plus_report_line_ids': [ref('tax_report_line_B10')]
+                }),
+            ]"/>
+            <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'plus_report_line_ids': [ref('tax_report_line_A05')],
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('l10n_se.1_coa_2611'),
+                    'plus_report_line_ids': [ref('tax_report_line_B10')],
+                }),
+            ]"/>
+            </record>
+
+            <record id="sale_tax_12_goods" model="account.tax.template">
+            <field name="sequence">20</field>
+            <field name="description">12%</field>
+            <field name="name">Utgående moms 12%</field>
+            <field name="price_include" eval="0"/>
+            <field name="amount">12</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">sale</field>
+            <field name="chart_template_id" ref="l10nse_chart_template"/>
+            <field name="tax_group_id" ref="tax_group_ST12"/>
+            <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'plus_report_line_ids': [ref('tax_report_line_A05')],
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('l10n_se.1_coa_2621'),
+                    'plus_report_line_ids': [ref('tax_report_line_B11')],
+                }),
+            ]"/>
+            <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'plus_report_line_ids': [ref('tax_report_line_A05')],
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('l10n_se.1_coa_2621'),
+                    'plus_report_line_ids': [ref('tax_report_line_B11')],
+                }),
+            ]"/>
+        </record>
+
+        <record id="sale_tax_12_services" model="account.tax.template">
+            <field name="sequence">21</field>
+            <field name="description">12%</field>
+            <field name="name">Utgående moms Tjänst 12%</field>
+            <field name="price_include" eval="0"/>
+            <field name="amount">12</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">sale</field>
+            <field name="active" eval="False"/>
+            <field name="chart_template_id" ref="l10nse_chart_template"/>
+            <field name="tax_group_id" ref="tax_group_STS12"/>
+            <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'plus_report_line_ids': [ref('tax_report_line_A05')],
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('l10n_se.1_coa_2621'),
+                    'plus_report_line_ids': [ref('tax_report_line_B11')]
+                }),
+            ]"/>
+            <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'plus_report_line_ids': [ref('tax_report_line_A05')],
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('l10n_se.1_coa_2621'),
+                    'plus_report_line_ids': [ref('tax_report_line_B11')],
+                }),
+            ]"/>
+        </record>
+
+            <record id="sale_tax_6_goods" model="account.tax.template">
+            <field name="sequence">30</field>
+            <field name="description">6%</field>
+            <field name="name">Utgående moms 6%</field>
+            <field name="price_include" eval="0"/>
+            <field name="amount">6</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">sale</field>
+            <field name="chart_template_id" ref="l10nse_chart_template"/>
+            <field name="tax_group_id" ref="tax_group_ST6"/>
+            <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'plus_report_line_ids': [ref('tax_report_line_A05')],
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('l10n_se.1_coa_2631'),
+                    'plus_report_line_ids': [ref('tax_report_line_B12')],
+                }),
+            ]"/>
+            <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'plus_report_line_ids': [ref('tax_report_line_A05')],
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('l10n_se.1_coa_2631'),
+                    'plus_report_line_ids': [ref('tax_report_line_B12')],
+                }),
+            ]"/>
+        </record>
+
+        <record id="sale_tax_6_services" model="account.tax.template">
+            <field name="sequence">31</field>
+            <field name="description">6%</field>
+            <field name="name">Utgående moms Tjänst 6%</field>
+            <field name="price_include" eval="0"/>
+            <field name="amount">6</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">sale</field>
+            <field name="active" eval="False"/>
+            <field name="chart_template_id" ref="l10nse_chart_template"/>
+            <field name="tax_group_id" ref="tax_group_STS6"/>
+            <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'plus_report_line_ids': [ref('tax_report_line_A05')],
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('l10n_se.1_coa_2631'),
+                    'plus_report_line_ids': [ref('tax_report_line_B12')]
+                }),
+            ]"/>
+            <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'plus_report_line_ids': [ref('tax_report_line_A05')],
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('l10n_se.1_coa_2631'),
+                    'plus_report_line_ids': [ref('tax_report_line_B12')],
+                }),
+            ]"/>
+        </record>
+
+        <record id="sale_tax_0_goods" model="account.tax.template">
+            <field name="sequence">40</field>
+            <field name="description">0%</field>
+            <field name="name">Utgående moms 0%</field>
+            <field name="price_include" eval="0"/>
+            <field name="amount">0</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">sale</field>
+            <field name="chart_template_id" ref="l10nse_chart_template"/>
+            <field name="tax_group_id" ref="tax_group_ST0"/>
+            <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'plus_report_line_ids': [ref('tax_report_line_E40')],
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                }),
+            ]"/>
+            <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'plus_report_line_ids': [ref('tax_report_line_E40')],
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                }),
+            ]"/>
+        </record>
+
+
+        <record id="sale_tax_0_services" model="account.tax.template">
+            <field name="sequence">41</field>
+            <field name="description">0%</field>
+            <field name="name">Utgående moms Tjänst 0%</field>
+            <field name="price_include" eval="0"/>
+            <field name="amount">0</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">sale</field>
+            <field name="active" eval="False"/>
+            <field name="chart_template_id" ref="l10nse_chart_template"/>
+            <field name="tax_group_id" ref="tax_group_STS0"/>
+            <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'plus_report_line_ids': [ref('tax_report_line_E40')],
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                }),
+            ]"/>
+            <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'plus_report_line_ids': [ref('tax_report_line_E40')],
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                }),
+            ]"/>
+        </record>
+
+        <record id="sale_tax_EU_goods" model="account.tax.template">
+            <field name="sequence">50</field>
+            <field name="description">0%</field>
+            <field name="name">Utgående moms 0% EU</field>
+            <field name="price_include" eval="0"/>
+            <field name="amount">0</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">sale</field>
+            <field name="chart_template_id" ref="l10nse_chart_template"/>
+            <field name="tax_group_id" ref="tax_group_ST0_EU"/>
+            <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'plus_report_line_ids': [ref('tax_report_line_E35')],
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                }),
+            ]"/>
+            <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'plus_report_line_ids': [ref('tax_report_line_E35')],
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                }),
+            ]"/>
+        </record>
+
+        <record id="sale_tax_EU_services" model="account.tax.template">
+            <field name="sequence">51</field>
+            <field name="description">0%</field>
+            <field name="name">Utgående moms Tjänst 0% EU</field>
+            <field name="price_include" eval="0"/>
+            <field name="amount">0</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">sale</field>
+            <field name="chart_template_id" ref="l10nse_chart_template"/>
+            <field name="tax_group_id" ref="tax_group_STS0_EU"/>
+            <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'plus_report_line_ids': [ref('tax_report_line_E39')],
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                }),
+            ]"/>
+            <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'plus_report_line_ids': [ref('tax_report_line_E39')],
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                }),
+            ]"/>
+        </record>
+
+        <record id="sale_tax_NEU_goods" model="account.tax.template">
+            <field name="sequence">60</field>
+            <field name="description">0%</field>
+            <field name="name">Utgående moms 0% NEU</field>
+            <field name="price_include" eval="0"/>
+            <field name="amount">0</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">sale</field>
+            <field name="chart_template_id" ref="l10nse_chart_template"/>
+            <field name="tax_group_id" ref="tax_group_ST0_NEU"/>
+            <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'plus_report_line_ids': [ref('tax_report_line_E36')],
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                }),
+            ]"/>
+            <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'plus_report_line_ids': [ref('tax_report_line_E36')],
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                }),
+            ]"/>
+        </record>
+
+        <record id="sale_tax_NEU_services" model="account.tax.template">
+            <field name="sequence">61</field>
+            <field name="description">0%</field>
+            <field name="name">Utgående moms Tjänst 0% NEU</field>
+            <field name="price_include" eval="0"/>
+            <field name="amount">0</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">sale</field>
+            <field name="chart_template_id" ref="l10nse_chart_template"/>
+            <field name="tax_group_id" ref="tax_group_STS0_NEU"/>
+            <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'plus_report_line_ids': [ref('tax_report_line_E40')],
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                }),
+            ]"/>
+            <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'plus_report_line_ids': [ref('tax_report_line_E40')],
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                }),
+            ]"/>
+        </record>
+
+        <record id="purchase_goods_tax_25" model="account.tax.template">
+            <field name="sequence">80</field>
+            <field name="description">25%</field>
+            <field name="name">Ingående moms 25%</field>
+            <field name="price_include" eval="0"/>
+            <field name="amount">25</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">purchase</field>
+            <field name="chart_template_id" ref="l10nse_chart_template"/>
+            <field name="tax_group_id" ref="tax_group_PT25"/>
+            <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',                 
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('l10n_se.1_coa_2641'),
+                    'plus_report_line_ids': [ref('tax_report_line_F48')],
+                }),
+            ]"/>
+            <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('l10n_se.1_coa_2641'),
+                    'plus_report_line_ids': [ref('tax_report_line_F48')],
+                }),
+            ]"/>
+        </record>
+
+
+        <record id="purchase_services_tax_25" model="account.tax.template">
+            <field name="sequence">81</field>
+            <field name="description">25%</field>
+            <field name="name">Ingående moms Tjänst 25%</field>
+            <field name="price_include" eval="0"/>
+            <field name="amount">25</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">purchase</field>
+            <field name="chart_template_id" ref="l10nse_chart_template"/>
+            <field name="tax_group_id" ref="tax_group_PTS25"/>
+            <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',                 
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('l10n_se.1_coa_2641'),
+                    'plus_report_line_ids': [ref('tax_report_line_F48')],
+                }),
+            ]"/>
+            <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('l10n_se.1_coa_2641'),
+                    'plus_report_line_ids': [ref('tax_report_line_F48')],
+                }),
+            ]"/>
+        </record>
+
+       <record id="purchase_goods_tax_12" model="account.tax.template">
+            <field name="sequence">90</field>
+            <field name="description">12%</field>
+            <field name="name">Ingående moms 12%</field>
+            <field name="price_include" eval="0"/>
+            <field name="amount">12</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">purchase</field>
+            <field name="chart_template_id" ref="l10nse_chart_template"/>
+            <field name="tax_group_id" ref="tax_group_PT12"/>
+            <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',                 
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('l10n_se.1_coa_2621'),
+                    'plus_report_line_ids': [ref('tax_report_line_F48')],
+                }),
+            ]"/>
+            <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('l10n_se.1_coa_2621'),
+                    'plus_report_line_ids': [ref('tax_report_line_F48')],
+                }),
+            ]"/>
+        </record>
+
+
+        <record id="purchase_services_tax_12" model="account.tax.template">
+            <field name="sequence">91</field>
+            <field name="description">12%</field>
+            <field name="name">Ingående moms Tjänst 12%</field>
+            <field name="price_include" eval="0"/>
+            <field name="amount">12</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">purchase</field>
+            <field name="chart_template_id" ref="l10nse_chart_template"/>
+            <field name="tax_group_id" ref="tax_group_PTS12"/>
+            <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',                 
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('l10n_se.1_coa_2621'),
+                    'plus_report_line_ids': [ref('tax_report_line_F48')],
+                }),
+            ]"/>
+            <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('l10n_se.1_coa_2621'),
+                    'plus_report_line_ids': [ref('tax_report_line_F48')],
+                }),
+            ]"/>
+        </record>
+
+
+       <record id="purchase_goods_tax_6" model="account.tax.template">
+            <field name="sequence">100</field>
+            <field name="description">6%</field>
+            <field name="name">Ingående moms 6%</field>
+            <field name="price_include" eval="0"/>
+            <field name="amount">6</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">purchase</field>
+            <field name="chart_template_id" ref="l10nse_chart_template"/>
+            <field name="tax_group_id" ref="tax_group_PT6"/>
+            <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',                 
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('l10n_se.1_coa_2631'),
+                    'plus_report_line_ids': [ref('tax_report_line_F48')],
+                }),
+            ]"/>
+            <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('l10n_se.1_coa_2631'),
+                    'plus_report_line_ids': [ref('tax_report_line_F48')],
+                }),
+            ]"/>
+        </record>
+
+
+        <record id="purchase_services_tax_6" model="account.tax.template">
+            <field name="sequence">101</field>
+            <field name="description">6%</field>
+            <field name="name">Ingående moms Tjänst 6%</field>
+            <field name="price_include" eval="0"/>
+            <field name="amount">6</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">purchase</field>
+            <field name="chart_template_id" ref="l10nse_chart_template"/>
+            <field name="tax_group_id" ref="tax_group_PTS6"/>
+            <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',                 
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('l10n_se.1_coa_2631'),
+                    'plus_report_line_ids': [ref('tax_report_line_F48')],
+                }),
+            ]"/>
+            <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('l10n_se.1_coa_2631'),
+                    'plus_report_line_ids': [ref('tax_report_line_F48')],
+                }),
+            ]"/>
+        </record>
+
+        <record id="purchase_tax_25_incl" model="account.tax.template">
+            <field name="sequence">103</field>
+            <field name="description">25%</field>
+            <field name="name">Ingående moms 25% incl</field>
+            <field name="price_include" eval="1"/>
+            <field name="amount">25</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">purchase</field>
+            <field name="chart_template_id" ref="l10nse_chart_template"/>
+            <field name="tax_group_id" ref="tax_group_PT25"/>
+            <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',                 
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('l10n_se.1_coa_2641'),
+                    'plus_report_line_ids': [ref('tax_report_line_F48')],
+                }),
+            ]"/>
+            <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('l10n_se.1_coa_2641'),
+                    'plus_report_line_ids': [ref('tax_report_line_F48')],
+                }),
+            ]"/>
+        </record>
+
+        <record id="purchase_tax_12_incl" model="account.tax.template">
+            <field name="sequence">104</field>
+            <field name="description">12%</field>
+            <field name="name">Ingående moms 12% incl</field>
+            <field name="price_include" eval="1"/>
+            <field name="amount">12</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">purchase</field>
+            <field name="chart_template_id" ref="l10nse_chart_template"/>
+            <field name="tax_group_id" ref="tax_group_PT12"/>
+            <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',                 
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('l10n_se.1_coa_2621'),
+                    'plus_report_line_ids': [ref('tax_report_line_F48')],
+                }),
+            ]"/>
+            <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('l10n_se.1_coa_2621'),
+                    'plus_report_line_ids': [ref('tax_report_line_F48')],
+                }),
+            ]"/>
+        </record>
+
+        <record id="purchase_tax_6_incl" model="account.tax.template">
+            <field name="sequence">105</field>
+            <field name="description">6%</field>
+            <field name="name">Ingående moms 6% incl</field>
+            <field name="price_include" eval="1"/>
+            <field name="amount">6</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">purchase</field>
+            <field name="chart_template_id" ref="l10nse_chart_template"/>
+            <field name="tax_group_id" ref="tax_group_PTS6"/>
+            <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',                 
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('l10n_se.1_coa_2631'),
+                    'plus_report_line_ids': [ref('tax_report_line_F48')],
+                }),
+            ]"/>
+            <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('l10n_se.1_coa_2631'),
+                    'plus_report_line_ids': [ref('tax_report_line_F48')],
+                }),
+            ]"/>
+        </record>
+
+        <record id="purchase_tax_leasing" model="account.tax.template">
+            <field name="sequence">106</field>
+            <field name="description">Leasing</field>
+            <field name="name">Moms for leasing av personbilar</field>
+            <field name="price_include" eval="1"/>
+            <field name="amount">11.1109</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">purchase</field>
+            <field name="chart_template_id" ref="l10nse_chart_template"/>
+            <field name="tax_group_id" ref="tax_group_PTL"/>
+            <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',                 
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('l10n_se.1_coa_2641'),
+                    'plus_report_line_ids': [ref('tax_report_line_F48')],
+                }),
+            ]"/>
+            <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('l10n_se.1_coa_2641'),
+                    'plus_report_line_ids': [ref('tax_report_line_F48')],
+                }),
+            ]"/>
+        </record>
+
+        <record id="purchase_goods_tax_25_EU" model="account.tax.template">
+            <field name="sequence">110</field>
+            <field name="description">0%</field>
+            <field name="name">Inköp av varor EU 25%</field>
+            <field name="price_include" eval="0"/>
+            <field name="amount">25</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">purchase</field>
+            <field name="chart_template_id" ref="l10nse_chart_template"/>
+            <field name="tax_group_id" ref="tax_group_PT25_EU"/>
+            <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'plus_report_line_ids': [ref('tax_report_line_C20')],
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('l10n_se.1_coa_2645'),
+                    'plus_report_line_ids': [ref('tax_report_line_F48')],
+                }),
+                (0,0, {
+                    'factor_percent': -100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('l10n_se.1_coa_2614'),
+                    'plus_report_line_ids': [ref('tax_report_line_D30')],
+                }),
+            ]"/>
+            <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'plus_report_line_ids': [ref('tax_report_line_C20')],
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('l10n_se.1_coa_2645'),
+                    'plus_report_line_ids': [ref('tax_report_line_F48')],
+                }),
+                (0,0, {
+                    'factor_percent': -100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('l10n_se.1_coa_2614'),
+                    'plus_report_line_ids': [ref('tax_report_line_D30')],
+                }),
+            ]"/>
+        </record>
+
+        <record id="purchase_services_tax_25_EU" model="account.tax.template">
+            <field name="sequence">111</field>
+            <field name="description">0%</field>
+            <field name="name">Inköp av tjänst EU 25%</field>
+            <field name="price_include" eval="0"/>
+            <field name="amount">25</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">purchase</field>
+            <field name="chart_template_id" ref="l10nse_chart_template"/>
+            <field name="tax_group_id" ref="tax_group_PTS25_EU"/>
+            <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'plus_report_line_ids': [ref('tax_report_line_C21')],
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('l10n_se.1_coa_2645'),
+                    'plus_report_line_ids': [ref('tax_report_line_F48')],
+                }),
+                (0,0, {
+                    'factor_percent': -100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('l10n_se.1_coa_2614'),
+                    'plus_report_line_ids': [ref('tax_report_line_D30')],
+                }),
+            ]"/>
+            <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'plus_report_line_ids': [ref('tax_report_line_C21')],
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('l10n_se.1_coa_2645'),
+                    'plus_report_line_ids': [ref('tax_report_line_F48')],
+                }),
+                (0,0, {
+                    'factor_percent': -100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('l10n_se.1_coa_2614'),
+                    'plus_report_line_ids': [ref('tax_report_line_D30')],
+                }),
+            ]"/>
+        </record>
+
+        <record id="purchase_goods_tax_12_EU" model="account.tax.template">
+            <field name="sequence">112</field>
+            <field name="description">0%</field>
+            <field name="name">Inköp av varor EU 12%</field>
+            <field name="price_include" eval="0"/>
+            <field name="amount">12</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">purchase</field>
+            <field name="chart_template_id" ref="l10nse_chart_template"/>
+            <field name="tax_group_id" ref="tax_group_PT12_EU"/>
+            <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'plus_report_line_ids': [ref('tax_report_line_C20')],
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('l10n_se.1_coa_2645'),
+                    'plus_report_line_ids': [ref('tax_report_line_F48')],
+                }),
+                (0,0, {
+                    'factor_percent': -100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('l10n_se.1_coa_2624'),
+                    'plus_report_line_ids': [ref('tax_report_line_D30')],
+                }),
+            ]"/>
+            <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'plus_report_line_ids': [ref('tax_report_line_C20')],
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('l10n_se.1_coa_2645'),
+                    'plus_report_line_ids': [ref('tax_report_line_F48')],
+                }),
+                (0,0, {
+                    'factor_percent': -100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('l10n_se.1_coa_2624'),
+                    'plus_report_line_ids': [ref('tax_report_line_D30')],
+                }),
+            ]"/>
+        </record>
+
+        <record id="purchase_services_tax_12_EU" model="account.tax.template">
+            <field name="sequence">113</field>
+            <field name="description">0%</field>
+            <field name="name">Inköp av tjänst EU 12%</field>
+            <field name="price_include" eval="0"/>
+            <field name="amount">12</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">purchase</field>
+            <field name="chart_template_id" ref="l10nse_chart_template"/>
+            <field name="tax_group_id" ref="tax_group_PTS12_EU"/>
+            <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'plus_report_line_ids': [ref('tax_report_line_C21')],
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('l10n_se.1_coa_2645'),
+                    'plus_report_line_ids': [ref('tax_report_line_F48')],
+                }),
+                (0,0, {
+                    'factor_percent': -100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('l10n_se.1_coa_2624'),
+                    'plus_report_line_ids': [ref('tax_report_line_D30')],
+                }),
+            ]"/>
+            <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'plus_report_line_ids': [ref('tax_report_line_C21')],
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('l10n_se.1_coa_2645'),
+                    'plus_report_line_ids': [ref('tax_report_line_F48')],
+                }),
+                (0,0, {
+                    'factor_percent': -100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('l10n_se.1_coa_2624'),
+                    'plus_report_line_ids': [ref('tax_report_line_D30')],
+                }),
+            ]"/>
+        </record>
+
+        <record id="purchase_goods_tax_6_EU" model="account.tax.template">
+            <field name="sequence">114</field>
+            <field name="description">0%</field>
+            <field name="name">Inköp av varor EU 6%</field>
+            <field name="price_include" eval="0"/>
+            <field name="amount">6</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">purchase</field>
+            <field name="chart_template_id" ref="l10nse_chart_template"/>
+            <field name="tax_group_id" ref="tax_group_PT6_EU"/>
+            <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'plus_report_line_ids': [ref('tax_report_line_C20')],
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('l10n_se.1_coa_2645'),
+                    'plus_report_line_ids': [ref('tax_report_line_F48')],
+                }),
+                (0,0, {
+                    'factor_percent': -100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('l10n_se.1_coa_2634'),
+                    'plus_report_line_ids': [ref('tax_report_line_D30')],
+                }),
+            ]"/>
+            <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'plus_report_line_ids': [ref('tax_report_line_C20')],
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('l10n_se.1_coa_2645'),
+                    'plus_report_line_ids': [ref('tax_report_line_F48')],
+                }),
+                (0,0, {
+                    'factor_percent': -100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('l10n_se.1_coa_2634'),
+                    'plus_report_line_ids': [ref('tax_report_line_D30')],
+                }),
+            ]"/>
+        </record>
+
+        <record id="purchase_services_tax_6_EU" model="account.tax.template">
+            <field name="sequence">115</field>
+            <field name="description">0%</field>
+            <field name="name">Inköp av tjänst EU 6%</field>
+            <field name="price_include" eval="0"/>
+            <field name="amount">6</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">purchase</field>
+            <field name="chart_template_id" ref="l10nse_chart_template"/>
+            <field name="tax_group_id" ref="tax_group_PTS6_EU"/>
+            <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'plus_report_line_ids': [ref('tax_report_line_C21')],
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('l10n_se.1_coa_2645'),
+                    'plus_report_line_ids': [ref('tax_report_line_F48')],
+                }),
+                (0,0, {
+                    'factor_percent': -100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('l10n_se.1_coa_2634'),
+                    'plus_report_line_ids': [ref('tax_report_line_D30')],
+                }),
+            ]"/>
+            <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'plus_report_line_ids': [ref('tax_report_line_C21')],
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('l10n_se.1_coa_2645'),
+                    'plus_report_line_ids': [ref('tax_report_line_F48')],
+                }),
+                (0,0, {
+                    'factor_percent': -100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('l10n_se.1_coa_2634'),
+                    'plus_report_line_ids': [ref('tax_report_line_D30')],
+                }),
+            ]"/>
+        </record>
+
+        <record id="purchase_goods_tax_25_NEU" model="account.tax.template">
+            <field name="sequence">120</field>
+            <field name="description">0%</field>
+            <field name="name">Beskattningsunderlag vid import 25%</field>
+            <field name="price_include" eval="0"/>
+            <field name="amount">25</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">purchase</field>
+            <field name="chart_template_id" ref="l10nse_chart_template"/>
+            <field name="tax_group_id" ref="tax_group_PT25_NEU"/>
+            <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'plus_report_line_ids': [ref('tax_report_line_C22')],
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('l10n_se.1_coa_2645'),
+                    'plus_report_line_ids': [ref('tax_report_line_F48')],
+                }),
+                (0,0, {
+                    'factor_percent': -100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('l10n_se.1_coa_2614'),
+                    'plus_report_line_ids': [ref('tax_report_line_D30')],
+                }),
+            ]"/>
+            <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'plus_report_line_ids': [ref('tax_report_line_C22')],
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('l10n_se.1_coa_2645'),
+                    'plus_report_line_ids': [ref('tax_report_line_F48')],
+                }),
+                (0,0, {
+                    'factor_percent': -100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('l10n_se.1_coa_2614'),
+                    'plus_report_line_ids': [ref('tax_report_line_D30')],
+                }),
+            ]"/>
+        </record>
+
+        <record id="purchase_services_tax_25_NEU" model="account.tax.template">
+            <field name="sequence">121</field>
+            <field name="description">0%</field>
+            <field name="name">Inköp av tjänster utanför EU 25%</field>
+            <field name="price_include" eval="0"/>
+            <field name="amount">25</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">purchase</field>
+            <field name="chart_template_id" ref="l10nse_chart_template"/>
+            <field name="tax_group_id" ref="tax_group_PTS25_NEU"/>
+            <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'plus_report_line_ids': [ref('tax_report_line_C22')],
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('l10n_se.1_coa_2645'),
+                    'plus_report_line_ids': [ref('tax_report_line_F48')],
+                }),
+                (0,0, {
+                    'factor_percent': -100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('l10n_se.1_coa_2614'),
+                    'plus_report_line_ids': [ref('tax_report_line_D30')],
+                }),
+            ]"/>
+            <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'plus_report_line_ids': [ref('tax_report_line_C22')],
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('l10n_se.1_coa_2645'),
+                    'plus_report_line_ids': [ref('tax_report_line_F48')],
+                }),
+                (0,0, {
+                    'factor_percent': -100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('l10n_se.1_coa_2614'),
+                    'plus_report_line_ids': [ref('tax_report_line_D30')],
+                }),
+            ]"/>
+        </record>
+
+        <record id="purchase_goods_tax_12_NEU" model="account.tax.template">
+            <field name="sequence">122</field>
+            <field name="description">0%</field>
+            <field name="name">Beskattningsunderlag vid import 12%</field>
+            <field name="price_include" eval="0"/>
+            <field name="amount">12</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">purchase</field>
+            <field name="chart_template_id" ref="l10nse_chart_template"/>
+            <field name="tax_group_id" ref="tax_group_PT12_NEU"/>
+            <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'plus_report_line_ids': [ref('tax_report_line_C22')],
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('l10n_se.1_coa_2645'),
+                    'plus_report_line_ids': [ref('tax_report_line_F48')],
+                }),
+                (0,0, {
+                    'factor_percent': -100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('l10n_se.1_coa_2624'),
+                    'plus_report_line_ids': [ref('tax_report_line_D30')],
+                }),
+            ]"/>
+            <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'plus_report_line_ids': [ref('tax_report_line_C22')],
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('l10n_se.1_coa_2645'),
+                    'plus_report_line_ids': [ref('tax_report_line_F48')],
+                }),
+                (0,0, {
+                    'factor_percent': -100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('l10n_se.1_coa_2624'),
+                    'plus_report_line_ids': [ref('tax_report_line_D30')],
+                }),
+            ]"/>
+        </record>
+
+        <record id="purchase_services_tax_12_NEU" model="account.tax.template">
+            <field name="sequence">123</field>
+            <field name="description">12%</field>
+            <field name="name">Inköp av tjänst utanför EU 12%</field>
+            <field name="price_include" eval="0"/>
+            <field name="amount">12</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">purchase</field>
+            <field name="chart_template_id" ref="l10nse_chart_template"/>
+            <field name="tax_group_id" ref="tax_group_PTS12_NEU"/>
+            <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'plus_report_line_ids': [ref('tax_report_line_C22')],
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('l10n_se.1_coa_2645'),
+                    'plus_report_line_ids': [ref('tax_report_line_F48')],
+                }),
+                (0,0, {
+                    'factor_percent': -100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('l10n_se.1_coa_2624'),
+                    'plus_report_line_ids': [ref('tax_report_line_D30')],
+                }),
+            ]"/>
+            <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'plus_report_line_ids': [ref('tax_report_line_C22')],
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('l10n_se.1_coa_2645'),
+                    'plus_report_line_ids': [ref('tax_report_line_F48')],
+                }),
+                (0,0, {
+                    'factor_percent': -100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('l10n_se.1_coa_2624'),
+                    'plus_report_line_ids': [ref('tax_report_line_D30')],
+                }),
+            ]"/>
+        </record>
+
+        <record id="purchase_goods_tax_6_NEU" model="account.tax.template">
+            <field name="sequence">124</field>
+            <field name="description">0%</field>
+            <field name="name">Beskattningsunderlag vid import 6%</field>
+            <field name="price_include" eval="0"/>
+            <field name="amount">6</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">purchase</field>
+            <field name="chart_template_id" ref="l10nse_chart_template"/>
+            <field name="tax_group_id" ref="tax_group_PT6_NEU"/>
+            <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'plus_report_line_ids': [ref('tax_report_line_C22')],
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('l10n_se.1_coa_2645'),
+                    'plus_report_line_ids': [ref('tax_report_line_F48')],
+                }),
+                (0,0, {
+                    'factor_percent': -100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('l10n_se.1_coa_2634'),
+                    'plus_report_line_ids': [ref('tax_report_line_D30')],
+                }),
+            ]"/>
+            <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'plus_report_line_ids': [ref('tax_report_line_C22')],
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('l10n_se.1_coa_2645'),
+                    'plus_report_line_ids': [ref('tax_report_line_F48')],
+                }),
+                (0,0, {
+                    'factor_percent': -100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('l10n_se.1_coa_2634'),
+                    'plus_report_line_ids': [ref('tax_report_line_D30')],
+                }),
+            ]"/>
+        </record>
+
+        <record id="purchase_services_tax_6_NEU" model="account.tax.template">
+            <field name="sequence">115</field>
+            <field name="description">0%</field>
+            <field name="name">Inköp av tjänst utanför EU 6%</field>
+            <field name="price_include" eval="0"/>
+            <field name="amount">6</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">purchase</field>
+            <field name="chart_template_id" ref="l10nse_chart_template"/>
+            <field name="tax_group_id" ref="tax_group_PTS6_NEU"/>
+            <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'plus_report_line_ids': [ref('tax_report_line_C22')],
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('l10n_se.1_coa_2645'),
+                    'plus_report_line_ids': [ref('tax_report_line_F48')],
+                }),
+                (0,0, {
+                    'factor_percent': -100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('l10n_se.1_coa_2634'),
+                    'plus_report_line_ids': [ref('tax_report_line_D30')],
+                }),
+            ]"/>
+            <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'plus_report_line_ids': [ref('tax_report_line_C22')],
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('l10n_se.1_coa_2645'),
+                    'plus_report_line_ids': [ref('tax_report_line_F48')],
+                }),
+                (0,0, {
+                    'factor_percent': -100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('l10n_se.1_coa_2634'),
+                    'plus_report_line_ids': [ref('tax_report_line_D30')],
+                }),
+            ]"/>
+        </record>
+
+</odoo>
