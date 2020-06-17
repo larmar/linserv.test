@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="sie_export_form_wizard" model="ir.ui.view">
+            <field name="name">SIE Export</field>
+            <field name="model">account.sie.export</field>
+            <field name="arch" type="xml">
+                <form>
+                    <group>
+                        <field name="company_id" options="{'no_create_edit': True}"/>
+                        <field name="date_from"/>
+                        <field name="date_to"/>
+                    </group>
+                    <footer>
+                        <button name="export_sie" string="Export SIE" type="object" class="oe_highlight"/>
+                        <button string="Cancel" class="btn btn-default" special="cancel"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_sie_export_wizard" model="ir.actions.act_window">
+            <field name="name">SIE Export</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">account.sie.export</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+        </record>
+
+        <menuitem action="action_sie_export_wizard" id="menu_action_sie_export" parent="account.menu_finance_entries" sequence="1" groups="account.group_account_manager" />
+    </data>
+</odoo>
